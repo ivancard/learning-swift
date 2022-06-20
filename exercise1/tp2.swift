@@ -1,10 +1,13 @@
 class ArrayOperator {
-    private var array: [Int]
+    public var array: [Int]
     public var addition: Int {
                 return array.reduce(0, +)
     }
     public var substraction: Int {
-                return array.reduce(0, -)
+        guard let firstArrayElement = array.first else {
+            return 0
+        }
+        return array.reduce(firstArrayElement, { x, y in x - y}) + firstArrayElement
     }
 
     init(_ arr: [Int]) {
@@ -12,6 +15,7 @@ class ArrayOperator {
     }
 }
 
-let arr = ArrayOperator([1,2,3,4,5])
+
+let arr = ArrayOperator([20,5,5])
 print(arr.addition)
 print(arr.substraction)
