@@ -47,7 +47,7 @@ class passwordValidator {
             return hasANumber && hasALowerCase && hasAUpperCase && hasASpecialCharacter ? "is strong" : errorMesagge
         }
         
-        return "The password must be longer that 6 characters"
+        return "The password must be longer than 6 characters"
     }
 }
 
