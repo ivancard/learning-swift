@@ -1,3 +1,5 @@
+import UIKit
+
 class regexPasswordValidation {
 
     let password: String
@@ -7,7 +9,7 @@ class regexPasswordValidation {
     }
 
     func validate () -> String {
-        let regex = ^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{6}$
+        let regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[d$@$!%*?&#])[A-Za-z\\dd$@$!%*?&#]{6,}"
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", regex)
         if passwordTest.evaluate(with: password) {
             return "The password is strong"
@@ -15,8 +17,7 @@ class regexPasswordValidation {
             return "The password is not strong"
         }
     }
-
 }
 
-var password = passwordValidator(password: "123456")
+var password = regexPasswordValidation(password: "Laa21!")
 print(password.validate())
