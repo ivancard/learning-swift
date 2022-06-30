@@ -27,25 +27,29 @@ class passwordValidator {
 
     func validate() -> String {
         
-        var errorMesagge = "Your password must contains: almost "
+        if self.password.count >= 6 {
+            var errorMesagge = "Your password must contains: almost "
+            
+            let hasANumber = hasARequiredSpecification(type: .numbers, evaluate: self.password)
+           
+            let hasALowerCase = hasARequiredSpecification(type: .lowerCase, evaluate: self.password)
+            
+            let hasAUpperCase = hasARequiredSpecification(type: .upperCase, evaluate: self.password)
+            
+            let hasASpecialCharacter = hasARequiredSpecification(type: .specialCharacters, evaluate: self.password)
+            
+            
+            errorMesagge += hasANumber == false ? "1 number " : ""
+            errorMesagge += hasALowerCase == false ? "1 lower case " : ""
+            errorMesagge += hasAUpperCase == false ? "1 upper case " : ""
+            errorMesagge += hasASpecialCharacter == false ? "1 special character " : ""
+            
+            return hasANumber && hasALowerCase && hasAUpperCase && hasASpecialCharacter ? "is strong" : errorMesagge
+        }
         
-        let hasANumber = hasARequiredSpecification(type: .numbers, evaluate: self.password)
-       
-        let hasALowerCase = hasARequiredSpecification(type: .lowerCase, evaluate: self.password)
-        
-        let hasAUpperCase = hasARequiredSpecification(type: .upperCase, evaluate: self.password)
-        
-        let hasASpecialCharacter = hasARequiredSpecification(type: .specialCharacters, evaluate: self.password)
-        
-        
-        errorMesagge += hasANumber == false ? "1 number " : ""
-        errorMesagge += hasALowerCase == false ? "1 lower case " : ""
-        errorMesagge += hasAUpperCase == false ? "1 upper case " : ""
-        errorMesagge += hasASpecialCharacter == false ? "1 special character " : ""
-        
-        return hasANumber && hasALowerCase && hasAUpperCase && hasASpecialCharacter ? "is strong" : errorMesagge
+        return "The password must be longer that 6 characters"
     }
 }
 
-var pass = passwordValidator(password: "aA")
+var pass = passwordValidator(password: "aAaaaa2!")
 print(pass.validate())
