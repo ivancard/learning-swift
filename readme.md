@@ -1,6 +1,6 @@
 # Learning Swift
 
-in this reposiroty I will upload my learning in swift. This is from a course of InfinixSoft Company.
+In this reposiroty I will upload my learning in swift. This is from a course with InfinixSoft Company.
 
 ## Exercise 1
 
