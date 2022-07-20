@@ -21,7 +21,7 @@ In this exercise, there is an app of a login validated in a swift dictionary. Th
 
 ![Gif of the app](assets/exercise2/ezgif-4-c36b5f6f13.gif)
 
-## Exercise 3
+## Trabajo Practico 3
 
 Esta app muestra una lista de peliculas separadas por genero. Y permite ver a detalle cada pelicula, presentando su titulo, calificacion y sinopsis.
 
