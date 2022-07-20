@@ -23,7 +23,7 @@ In this exercise, there is an app of a login validated in a swift dictionary. Th
 
 ## Exercise 3
 
-Esta app muestra una lista de peliculas separadas por genero.
+Esta app muestra una lista de peliculas separadas por genero. Y permite ver a detalle cada pelicula, presentando su titulo, calificacion y sinopsis.
 
 ### Implementaciones
     - Patron MVC
