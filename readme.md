@@ -25,14 +25,19 @@ In this exercise, there is an app of a login validated in a swift dictionary. Th
 
 Esta app muestra una lista de peliculas separadas por genero. Y permite ver a detalle cada pelicula, presentando su titulo, calificacion y sinopsis.
 
-### Implementaciones
-    - Patron MVC
-    - UITAbleView, para presentar las peliculas por genero.
-    - UICollectionView, para presentar cada pelicula dentro de la celda de la tabla.
-    - Extensions, para extender las funcionalidades de una clase asi tener el codigo mas ordenado y legible.
-    - Closures, para pasar a la collectionCell el navigationController del Home.
-    - Librerias externas, SideMenu para implementar el menu lateral que permite cerrar sesion.
-    - UserDefaults, para persistir datos del usuario como nombre y foto de perfil.
+**Diseño UI** - diseñado con Adobe XD
 
+![app ui design](assets/tp3/uiDesign.jpg)
+
+### Implementaciones
+- **Patron MVC**
+- **UITAbleView**, para presentar las peliculas por genero.
+- **UICollectionView**, para presentar cada pelicula dentro de la celda de la tabla.
+- **Extensions**, para extender las funcionalidades de una clase asi tener el codigo mas ordenado y legible.
+- **Closures**, para pasar a la collectionCell el navigationController del Home.
+- **Librerias externas**, SideMenu para implementar el menu lateral que permite cerrar sesion.
+- **UserDefaults**, para persistir datos del usuario como nombre y foto de perfil.
+
+App en funcionamiento
 
 ![Gif of the app](assets/tp3/tp3.gif)
