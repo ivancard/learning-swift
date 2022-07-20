@@ -20,3 +20,19 @@ This directory contains six exercises about OOP.
 In this exercise, there is an app of a login validated in a swift dictionary. This app use a navigation controller for redirect the loged user to the home view
 
 ![Gif of the app](assets/exercise2/ezgif-4-c36b5f6f13.gif)
+
+## Exercise 3
+
+Esta app muestra una lista de peliculas separadas por genero.
+
+### Implementaciones
+    - Patron MVC
+    - UITAbleView, para presentar las peliculas por genero.
+    - UICollectionView, para presentar cada pelicula dentro de la celda de la tabla.
+    - Extensions, para extender las funcionalidades de una clase asi tener el codigo mas ordenado y legible.
+    - Closures, para pasar a la collectionCell el navigationController del Home.
+    - Librerias externas, SideMenu para implementar el menu lateral que permite cerrar sesion.
+    - UserDefaults, para persistir datos del usuario como nombre y foto de perfil.
+
+
+![Gif of the app](assets/tp3/tp3.gif)
