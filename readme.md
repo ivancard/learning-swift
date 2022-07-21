@@ -41,3 +41,8 @@ Esta app muestra una lista de peliculas separadas por genero. Y permite ver a de
 App en funcionamiento
 
 ![Gif of the app](assets/tp3/tp3.gif)
+
+## Trabajo Practico 4
+Se implemento Alamofire para llamar a la api de registro y login.
+
+![Gif of the app](assets/tp4/tp4.gif)
