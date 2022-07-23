@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "imgHellraiser.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

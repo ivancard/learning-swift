@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.6.1)
+  - DynamicBlurView (4.1.0)
+  - Kingfisher (7.3.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - PopupDialog (~> 1.1)
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DynamicBlurView
+    - Kingfisher
+    - PopupDialog
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: 7c1c5ec9d06a22e73bf425d128f3e4ba04447295
+
+COCOAPODS: 1.8.4

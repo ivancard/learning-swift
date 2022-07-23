@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="FilmmerTP3" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="YSd-tw-pYc" id="Glw-7U-xUy"/>
+                <outlet property="actorsMovie" destination="XwU-rA-paR" id="FZD-Xp-Vh2"/>
+                <outlet property="directorMovie" destination="6HN-2l-pbl" id="Ugm-tu-fQW"/>
+                <outlet property="genreMovie" destination="uAS-3i-C3E" id="Cbp-4K-cQx"/>
+                <outlet property="imageMovie" destination="YoH-RR-dcg" id="R7Q-t4-hGX"/>
+                <outlet property="infoStack" destination="dyJ-eA-xC3" id="alw-BC-Tuu"/>
+                <outlet property="labelEmptySearch" destination="Tr8-JE-coR" id="idZ-vq-YZC"/>
+                <outlet property="plotMovie" destination="M7K-oJ-GWm" id="rcB-YW-dw1"/>
+                <outlet property="rateMovie" destination="wlD-9z-Sqw" id="KSr-5O-DMz"/>
+                <outlet property="searchTextField" destination="4Ey-d0-Kkc" id="mZH-px-PKE"/>
+                <outlet property="titleMovie" destination="Ssf-b7-hAo" id="4ra-so-TfG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearMovie" destination="xT2-eX-x84" id="rDc-Gd-Kxi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgNoFound" translatesAutoresizingMaskIntoConstraints="NO" id="YoH-RR-dcg">
+                    <rect key="frame" x="57" y="254" width="300" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="X0U-Zz-s3p"/>
+                        <constraint firstAttribute="width" constant="300" id="ZS2-sF-xmk"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dyJ-eA-xC3">
+                    <rect key="frame" x="57" y="479" width="300" height="222"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-b7-hAo">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT2-eX-x84">
+                            <rect key="frame" x="0.0" y="46" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlD-9z-Sqw">
+                            <rect key="frame" x="0.0" y="77" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HN-2l-pbl">
+                            <rect key="frame" x="0.0" y="108" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-3i-C3E">
+                            <rect key="frame" x="0.0" y="139" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="Actors" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwU-rA-paR">
+                            <rect key="frame" x="0.0" y="170" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="253" text="plot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7K-oJ-GWm">
+                            <rect key="frame" x="0.0" y="201" width="300" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" name="customWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="zx4-uL-RhG"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-ef-jkw">
+                    <rect key="frame" x="57" y="179" width="300" height="50"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="Search">
+                        <color key="titleColor" name="customWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSearchMovies" destination="-1" eventType="touchUpInside" id="M2m-Ce-oh3"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ey-d0-Kkc">
+                    <rect key="frame" x="57" y="119" width="300" height="50"/>
+                    <color key="backgroundColor" name="customWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Uwz-FM-Mvn"/>
+                        <constraint firstAttribute="height" constant="50" id="uXJ-Cb-dCH"/>
+                    </constraints>
+                    <color key="textColor" name="customBlack"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No movie data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tr8-JE-coR">
+                    <rect key="frame" x="57" y="254" width="300" height="300"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="8St-K2-n9e"/>
+                        <constraint firstAttribute="width" constant="300" id="SsU-wi-foD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                    <color key="textColor" name="customWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-tw-pYc">
+                    <rect key="frame" x="57" y="254" width="300" height="300"/>
+                    <color key="backgroundColor" red="0.2316050828" green="0.18685352799999999" blue="0.37357035280000001" alpha="0.80366246229937277" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Lzv-ez-fNc"/>
+                        <constraint firstAttribute="width" constant="300" id="dUY-f7-twX"/>
+                    </constraints>
+                    <color key="color" name="customWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bgColor"/>
+            <constraints>
+                <constraint firstItem="dyJ-eA-xC3" firstAttribute="top" secondItem="YoH-RR-dcg" secondAttribute="bottom" constant="25" id="2GO-u2-rpJ"/>
+                <constraint firstItem="4Ey-d0-Kkc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="4Tp-m9-9LX"/>
+                <constraint firstItem="YSd-tw-pYc" firstAttribute="top" secondItem="lKE-ef-jkw" secondAttribute="bottom" constant="25" id="7vy-MQ-1K5"/>
+                <constraint firstItem="4Ey-d0-Kkc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="98f-zE-gPa"/>
+                <constraint firstItem="dyJ-eA-xC3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9lY-gM-mLn"/>
+                <constraint firstItem="YoH-RR-dcg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L1Z-Fh-Lrb"/>
+                <constraint firstItem="lKE-ef-jkw" firstAttribute="height" secondItem="4Ey-d0-Kkc" secondAttribute="height" id="MxM-jR-uvW"/>
+                <constraint firstItem="Tr8-JE-coR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NGf-hE-9th"/>
+                <constraint firstItem="lKE-ef-jkw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahH-Mq-4u6"/>
+                <constraint firstItem="lKE-ef-jkw" firstAttribute="top" secondItem="4Ey-d0-Kkc" secondAttribute="bottom" constant="10" id="fW6-gX-Gr7"/>
+                <constraint firstItem="lKE-ef-jkw" firstAttribute="width" secondItem="4Ey-d0-Kkc" secondAttribute="width" id="pYk-20-JdH"/>
+                <constraint firstItem="Tr8-JE-coR" firstAttribute="top" secondItem="lKE-ef-jkw" secondAttribute="bottom" constant="25" id="tLf-xh-loS"/>
+                <constraint firstItem="YSd-tw-pYc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vxS-uk-Dl9"/>
+                <constraint firstItem="YoH-RR-dcg" firstAttribute="top" secondItem="lKE-ef-jkw" secondAttribute="bottom" constant="25" id="yiY-9Q-W27"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgNoFound" width="221" height="210"/>
+        <namedColor name="AccentColor">
+            <color red="0.40784313725490196" green="0.34509803921568627" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bgColor">
+            <color red="0.23137254901960785" green="0.19215686274509805" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="customBlack">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="customWhite">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

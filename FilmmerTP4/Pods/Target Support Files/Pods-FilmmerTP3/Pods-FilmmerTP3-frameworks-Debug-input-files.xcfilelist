@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-FilmmerTP3/Pods-FilmmerTP3-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework

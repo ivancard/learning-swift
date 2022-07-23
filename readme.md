@@ -43,6 +43,10 @@ App en funcionamiento
 ![Gif of the app](assets/tp3/tp3.gif)
 
 ## Trabajo Practico 4
-Se implemento Alamofire para llamar a la api de registro y login.
+Se implementó Alamofire para llamar a la api de registro y login.
+Tambien cuenta con una seccion de busqueda de peliculas, usando api de omdbapi.com
+Se usó libreririas externas:
+- PopupDialog, para mensajes popups
+- Kingfisher, para la descarga de imagenes
 
 ![Gif of the app](assets/tp4/tp4.gif)
