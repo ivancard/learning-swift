@@ -38,7 +38,7 @@ Esta app muestra una lista de peliculas separadas por genero. Y permite ver a de
 - **Librerias externas**, SideMenu para implementar el menu lateral que permite cerrar sesion.
 - **UserDefaults**, para persistir datos del usuario como nombre y foto de perfil.
 
-App en funcionamiento
+## App en funcionamiento
 
 ![Gif of the app](assets/tp3/tp3.gif)
 
@@ -50,3 +50,18 @@ Se usó libreririas externas:
 - Kingfisher, para la descarga de imagenes
 
 ![Gif of the app](assets/tp4/tp4.gif)
+
+## Vistas
+
+![views of app](assets/tp4/views1.jpg)
+![views of app](assets/tp4/views2.jpg)
+
+
+## Other projects
+### AppleWatch app Notes
+In this app you can create, list and delete notes.
+    Developed with SwiftUI
+
+![app ui design](assets/tp4/notesViews.jpg)
+
+
